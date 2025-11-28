@@ -1,4 +1,17 @@
-C:\springdatajpa\tutorials\persistence-modules\spring-data-jpa-query>mvn clean compile
+ 
+C:\hibernatejpa>git clone -b BAEL-9529 https://github.com/dvohra09/tutorials.git
+Cloning into 'tutorials'...
+remote: Enumerating objects: 288777, done.
+remote: Counting objects: 100% (146/146), done.
+remote: Compressing objects: 100% (124/124), done.
+remote: Total 288777 (delta 57), reused 0 (delta 0), pack-reused 288631 (from 1)
+Receiving objects: 100% (288777/288777), 113.02 MiB | 9.71 MiB/s, done.
+Resolving deltas: 100% (83852/83852), done.
+Updating files: 100% (33756/33756), done.
+
+C:\hibernatejpa>cd C:\hibernatejpa\tutorials\persistence-modules\spring-data-jpa-query
+
+C:\hibernatejpa\tutorials\persistence-modules\spring-data-jpa-query>mvn clean compile
 [INFO] Scanning for projects...
 [INFO] gitflow-incremental-builder is disabled.
 [INFO]
@@ -8,14 +21,13 @@ C:\springdatajpa\tutorials\persistence-modules\spring-data-jpa-query>mvn clean c
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO]
 [INFO] --- clean:3.2.0:clean (default-clean) @ spring-data-jpa-query ---
-[INFO] Deleting C:\springdatajpa\tutorials\persistence-modules\spring-data-jpa-query\target
 [INFO]
 [INFO] --- directory:1.0:directory-of (directories) @ spring-data-jpa-query ---
-[INFO] Directory of com.baeldung:parent-modules set to: C:\springdatajpa\tutorials
+[INFO] Directory of com.baeldung:parent-modules set to: C:\hibernatejpa\tutorials
 [INFO]
 [INFO] --- install:3.1.2:install-file (install-jar-lib) @ spring-data-jpa-query ---
-[INFO] Installing C:\springdatajpa\tutorials\custom-pmd-0.0.1.jar to C:\Users\Administrator\.m2\repository\org\baeldung\pmd\custom-pmd\0.0.1\custom-pmd-0.0.1.jar
-[INFO] Installing C:\Users\ADMINI~1\AppData\Local\Temp\mvninstall13847394077876271028.pom to C:\Users\Administrator\.m2\repository\org\baeldung\pmd\custom-pmd\0.0.1\custom-pmd-0.0.1.pom
+[INFO] Installing C:\hibernatejpa\tutorials\custom-pmd-0.0.1.jar to C:\Users\Administrator\.m2\repository\org\baeldung\pmd\custom-pmd\0.0.1\custom-pmd-0.0.1.jar
+[INFO] Installing C:\Users\ADMINI~1\AppData\Local\Temp\mvninstall4695248408492559432.pom to C:\Users\Administrator\.m2\repository\org\baeldung\pmd\custom-pmd\0.0.1\custom-pmd-0.0.1.pom
 [INFO]
 [INFO] --- resources:3.3.0:resources (default-resources) @ spring-data-jpa-query ---
 [INFO] Copying 9 resources
@@ -27,10 +39,12 @@ C:\springdatajpa\tutorials\persistence-modules\spring-data-jpa-query>mvn clean c
 [WARNING] source value 8 is obsolete and will be removed in a future release
 [WARNING] target value 8 is obsolete and will be removed in a future release
 [WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
-[INFO] /C:/springdatajpa/tutorials/persistence-modules/spring-data-jpa-query/src/main/java/com/baeldung/hibernate/fetching/view/FetchingAppView.java: C:\springdatajpa\tutorials\persistence-modules\spring-data-jpa-query\src\main\java\com\baeldung\hibernate\fetching\view\FetchingAppView.java uses or overrides a deprecated API.
-[INFO] /C:/springdatajpa/tutorials/persistence-modules/spring-data-jpa-query/src/main/java/com/baeldung/hibernate/fetching/view/FetchingAppView.java: Recompile with -Xlint:deprecation for details.
-[INFO] /C:/springdatajpa/tutorials/persistence-modules/spring-data-jpa-query/src/main/java/com/baeldung/hibernate/fetching/model/UserLazy.java: Some input files use unchecked or unsafe operations.
-[INFO] /C:/springdatajpa/tutorials/persistence-modules/spring-data-jpa-query/src/main/java/com/baeldung/hibernate/fetching/model/UserLazy.java: Recompile with -Xlint:unchecked for details.
+[WARNING] /C:/hibernatejpa/tutorials/persistence-modules/spring-data-jpa-query/src/main/java/com/baeldung/persistence/model/Bar.java:[8,33] org.hibernate.annotations.OrderBy in org.hibernate.annotations has been deprecated and marked for removal
+[WARNING] /C:/hibernatejpa/tutorials/persistence-modules/spring-data-jpa-query/src/main/java/com/baeldung/persistence/model/Bar.java:[73,6] org.hibernate.annotations.OrderBy in org.hibernate.annotations has been deprecated and marked for removal
+[INFO] /C:/hibernatejpa/tutorials/persistence-modules/spring-data-jpa-query/src/main/java/com/baeldung/hibernate/fetching/view/FetchingAppView.java: Some input files use or override a deprecated API.
+[INFO] /C:/hibernatejpa/tutorials/persistence-modules/spring-data-jpa-query/src/main/java/com/baeldung/hibernate/fetching/view/FetchingAppView.java: Recompile with -Xlint:deprecation for details.
+[INFO] /C:/hibernatejpa/tutorials/persistence-modules/spring-data-jpa-query/src/main/java/com/baeldung/hibernate/fetching/view/FetchingAppView.java: Some input files use unchecked or unsafe operations.
+[INFO] /C:/hibernatejpa/tutorials/persistence-modules/spring-data-jpa-query/src/main/java/com/baeldung/hibernate/fetching/view/FetchingAppView.java: Recompile with -Xlint:unchecked for details.
 [INFO]
 [INFO] >>> pmd:3.26.0:check (default) > :pmd @ spring-data-jpa-query >>>
 [INFO]
@@ -49,11 +63,11 @@ C:\springdatajpa\tutorials\persistence-modules\spring-data-jpa-query>mvn clean c
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  36.450 s
-[INFO] Finished at: 2025-11-25T16:12:06-08:00
+[INFO] Total time:  33.060 s
+[INFO] Finished at: 2025-11-27T18:04:23-08:00
 [INFO] ------------------------------------------------------------------------
 
-C:\springdatajpa\tutorials\persistence-modules\spring-data-jpa-query>mvn clean test
+C:\hibernatejpa\tutorials\persistence-modules\spring-data-jpa-query>mvn clean test
 [INFO] Scanning for projects...
 [INFO] gitflow-incremental-builder is disabled.
 [INFO]
@@ -63,14 +77,14 @@ C:\springdatajpa\tutorials\persistence-modules\spring-data-jpa-query>mvn clean t
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO]
 [INFO] --- clean:3.2.0:clean (default-clean) @ spring-data-jpa-query ---
-[INFO] Deleting C:\springdatajpa\tutorials\persistence-modules\spring-data-jpa-query\target
+[INFO] Deleting C:\hibernatejpa\tutorials\persistence-modules\spring-data-jpa-query\target
 [INFO]
 [INFO] --- directory:1.0:directory-of (directories) @ spring-data-jpa-query ---
-[INFO] Directory of com.baeldung:parent-modules set to: C:\springdatajpa\tutorials
+[INFO] Directory of com.baeldung:parent-modules set to: C:\hibernatejpa\tutorials
 [INFO]
 [INFO] --- install:3.1.2:install-file (install-jar-lib) @ spring-data-jpa-query ---
-[INFO] Installing C:\springdatajpa\tutorials\custom-pmd-0.0.1.jar to C:\Users\Administrator\.m2\repository\org\baeldung\pmd\custom-pmd\0.0.1\custom-pmd-0.0.1.jar
-[INFO] Installing C:\Users\ADMINI~1\AppData\Local\Temp\mvninstall8993683934722858400.pom to C:\Users\Administrator\.m2\repository\org\baeldung\pmd\custom-pmd\0.0.1\custom-pmd-0.0.1.pom
+[INFO] Installing C:\hibernatejpa\tutorials\custom-pmd-0.0.1.jar to C:\Users\Administrator\.m2\repository\org\baeldung\pmd\custom-pmd\0.0.1\custom-pmd-0.0.1.jar
+[INFO] Installing C:\Users\ADMINI~1\AppData\Local\Temp\mvninstall13661256221043438797.pom to C:\Users\Administrator\.m2\repository\org\baeldung\pmd\custom-pmd\0.0.1\custom-pmd-0.0.1.pom
 [INFO]
 [INFO] --- resources:3.3.0:resources (default-resources) @ spring-data-jpa-query ---
 [INFO] Copying 9 resources
@@ -82,10 +96,12 @@ C:\springdatajpa\tutorials\persistence-modules\spring-data-jpa-query>mvn clean t
 [WARNING] source value 8 is obsolete and will be removed in a future release
 [WARNING] target value 8 is obsolete and will be removed in a future release
 [WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
-[INFO] /C:/springdatajpa/tutorials/persistence-modules/spring-data-jpa-query/src/main/java/com/baeldung/hibernate/fetching/view/FetchingAppView.java: C:\springdatajpa\tutorials\persistence-modules\spring-data-jpa-query\src\main\java\com\baeldung\hibernate\fetching\view\FetchingAppView.java uses or overrides a deprecated API.
-[INFO] /C:/springdatajpa/tutorials/persistence-modules/spring-data-jpa-query/src/main/java/com/baeldung/hibernate/fetching/view/FetchingAppView.java: Recompile with -Xlint:deprecation for details.
-[INFO] /C:/springdatajpa/tutorials/persistence-modules/spring-data-jpa-query/src/main/java/com/baeldung/hibernate/fetching/model/UserLazy.java: Some input files use unchecked or unsafe operations.
-[INFO] /C:/springdatajpa/tutorials/persistence-modules/spring-data-jpa-query/src/main/java/com/baeldung/hibernate/fetching/model/UserLazy.java: Recompile with -Xlint:unchecked for details.
+[WARNING] /C:/hibernatejpa/tutorials/persistence-modules/spring-data-jpa-query/src/main/java/com/baeldung/persistence/model/Bar.java:[8,33] org.hibernate.annotations.OrderBy in org.hibernate.annotations has been deprecated and marked for removal
+[WARNING] /C:/hibernatejpa/tutorials/persistence-modules/spring-data-jpa-query/src/main/java/com/baeldung/persistence/model/Bar.java:[73,6] org.hibernate.annotations.OrderBy in org.hibernate.annotations has been deprecated and marked for removal
+[INFO] /C:/hibernatejpa/tutorials/persistence-modules/spring-data-jpa-query/src/main/java/com/baeldung/hibernate/fetching/view/FetchingAppView.java: Some input files use or override a deprecated API.
+[INFO] /C:/hibernatejpa/tutorials/persistence-modules/spring-data-jpa-query/src/main/java/com/baeldung/hibernate/fetching/view/FetchingAppView.java: Recompile with -Xlint:deprecation for details.
+[INFO] /C:/hibernatejpa/tutorials/persistence-modules/spring-data-jpa-query/src/main/java/com/baeldung/hibernate/fetching/view/FetchingAppView.java: Some input files use unchecked or unsafe operations.
+[INFO] /C:/hibernatejpa/tutorials/persistence-modules/spring-data-jpa-query/src/main/java/com/baeldung/hibernate/fetching/view/FetchingAppView.java: Recompile with -Xlint:unchecked for details.
 [INFO]
 [INFO] >>> pmd:3.26.0:check (default) > :pmd @ spring-data-jpa-query >>>
 [INFO]
@@ -107,7 +123,7 @@ C:\springdatajpa\tutorials\persistence-modules\spring-data-jpa-query>mvn clean t
 [INFO]
 [INFO] --- compiler:3.12.1:testCompile (default-testCompile) @ spring-data-jpa-query ---
 [INFO] Recompiling the module because of changed dependency.
-[INFO] Compiling 9 source files with javac [debug target 8] to target\test-classes
+[INFO] Compiling 11 source files with javac [debug target 8] to target\test-classes
 [WARNING] bootstrap class path not set in conjunction with -source 8
 [WARNING] source value 8 is obsolete and will be removed in a future release
 [WARNING] target value 8 is obsolete and will be removed in a future release
@@ -117,6 +133,85 @@ C:\springdatajpa\tutorials\persistence-modules\spring-data-jpa-query>mvn clean t
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  40.141 s
-[INFO] Finished at: 2025-11-25T16:13:01-08:00
+[INFO] Total time:  35.575 s
+[INFO] Finished at: 2025-11-27T18:05:14-08:00
 [INFO] ------------------------------------------------------------------------
+
+C:\hibernatejpa\tutorials\persistence-modules\spring-data-jpa-query>mvn clean verify
+[INFO] Scanning for projects...
+[INFO] gitflow-incremental-builder is disabled.
+[INFO]
+[INFO] -----------------< com.baeldung:spring-data-jpa-query >-----------------
+[INFO] Building spring-data-jpa-query 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- clean:3.2.0:clean (default-clean) @ spring-data-jpa-query ---
+[INFO] Deleting C:\hibernatejpa\tutorials\persistence-modules\spring-data-jpa-query\target
+[INFO]
+[INFO] --- directory:1.0:directory-of (directories) @ spring-data-jpa-query ---
+[INFO] Directory of com.baeldung:parent-modules set to: C:\hibernatejpa\tutorials
+[INFO]
+[INFO] --- install:3.1.2:install-file (install-jar-lib) @ spring-data-jpa-query ---
+[INFO] Installing C:\hibernatejpa\tutorials\custom-pmd-0.0.1.jar to C:\Users\Administrator\.m2\repository\org\baeldung\pmd\custom-pmd\0.0.1\custom-pmd-0.0.1.jar
+[INFO] Installing C:\Users\ADMINI~1\AppData\Local\Temp\mvninstall9910312108094608714.pom to C:\Users\Administrator\.m2\repository\org\baeldung\pmd\custom-pmd\0.0.1\custom-pmd-0.0.1.pom
+[INFO]
+[INFO] --- resources:3.3.0:resources (default-resources) @ spring-data-jpa-query ---
+[INFO] Copying 9 resources
+[INFO]
+[INFO] --- compiler:3.12.1:compile (default-compile) @ spring-data-jpa-query ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 71 source files with javac [debug target 8] to target\classes
+[WARNING] bootstrap class path not set in conjunction with -source 8
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[WARNING] /C:/hibernatejpa/tutorials/persistence-modules/spring-data-jpa-query/src/main/java/com/baeldung/persistence/model/Bar.java:[8,33] org.hibernate.annotations.OrderBy in org.hibernate.annotations has been deprecated and marked for removal
+[WARNING] /C:/hibernatejpa/tutorials/persistence-modules/spring-data-jpa-query/src/main/java/com/baeldung/persistence/model/Bar.java:[73,6] org.hibernate.annotations.OrderBy in org.hibernate.annotations has been deprecated and marked for removal
+[INFO] /C:/hibernatejpa/tutorials/persistence-modules/spring-data-jpa-query/src/main/java/com/baeldung/hibernate/fetching/view/FetchingAppView.java: Some input files use or override a deprecated API.
+[INFO] /C:/hibernatejpa/tutorials/persistence-modules/spring-data-jpa-query/src/main/java/com/baeldung/hibernate/fetching/view/FetchingAppView.java: Recompile with -Xlint:deprecation for details.
+[INFO] /C:/hibernatejpa/tutorials/persistence-modules/spring-data-jpa-query/src/main/java/com/baeldung/hibernate/fetching/view/FetchingAppView.java: Some input files use unchecked or unsafe operations.
+[INFO] /C:/hibernatejpa/tutorials/persistence-modules/spring-data-jpa-query/src/main/java/com/baeldung/hibernate/fetching/view/FetchingAppView.java: Recompile with -Xlint:unchecked for details.
+[INFO]
+[INFO] >>> pmd:3.26.0:check (default) > :pmd @ spring-data-jpa-query >>>
+[INFO]
+[INFO] --- pmd:3.26.0:pmd (pmd) @ spring-data-jpa-query ---
+[INFO] PMD version: 7.7.0
+[INFO] Rendering content with org.apache.maven.skins:maven-fluido-skin:jar:2.0.0-M9 skin
+[INFO]
+[INFO] <<< pmd:3.26.0:check (default) < :pmd @ spring-data-jpa-query <<<
+[INFO]
+[INFO]
+[INFO] --- pmd:3.26.0:check (default) @ spring-data-jpa-query ---
+[INFO]
+[INFO] --- pmd:3.26.0:pmd (default) @ spring-data-jpa-query ---
+[INFO] PMD version: 7.7.0
+[INFO] Rendering content with org.apache.maven.skins:maven-fluido-skin:jar:2.0.0-M9 skin
+[INFO]
+[INFO] --- resources:3.3.0:testResources (default-testResources) @ spring-data-jpa-query ---
+[INFO] Copying 7 resources
+[INFO]
+[INFO] --- compiler:3.12.1:testCompile (default-testCompile) @ spring-data-jpa-query ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 11 source files with javac [debug target 8] to target\test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 8
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO]
+[INFO] --- surefire:3.2.5:test (default-test) @ spring-data-jpa-query ---
+[INFO]
+[INFO] --- jar:3.4.2:jar (default-jar) @ spring-data-jpa-query ---
+[INFO] Building jar: C:\hibernatejpa\tutorials\persistence-modules\spring-data-jpa-query\target\spring-data-jpa-query-0.0.1-SNAPSHOT.jar
+[INFO]
+[INFO] --- spring-boot:3.3.2:repackage (repackage) @ spring-data-jpa-query ---
+[INFO] Replacing main artifact C:\hibernatejpa\tutorials\persistence-modules\spring-data-jpa-query\target\spring-data-jpa-query-0.0.1-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\hibernatejpa\tutorials\persistence-modules\spring-data-jpa-query\target\spring-data-jpa-query-0.0.1-SNAPSHOT.jar.original
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  51.909 s
+[INFO] Finished at: 2025-11-27T18:06:21-08:00
+[INFO] ------------------------------------------------------------------------
+
+C:\hibernatejpa\tutorials\persistence-modules\spring-data-jpa-query>
